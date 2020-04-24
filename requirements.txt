@@ -1,2 +1,2 @@
-Django==2.2.4
-newspaper==0.1.0.7
+sanic==19.12.2
+newspaper3k==0.2.8

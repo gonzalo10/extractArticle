@@ -1,17 +1,15 @@
 {
 	"version": 2,
-	"name": "python-page-zeit",
 	"builds": [
 		{
-			"src": "now_app/wsgi.py",
-			"use": "@ardnt/now-python-wsgi",
-			"config": { "maxLambdaSize": "15mb" }
+			"src": "extractor.py",
+			"use": "@now/python"
 		}
 	],
 	"routes": [
 		{
-			"src": "/(.*)",
-			"dest": "now_app/wsgi.py"
+			"src": "(.*)",
+			"dest": "extractor.py"
 		}
 	]
 }
